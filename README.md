@@ -1,1 +1,3 @@
-# calculator-TOP
+# Calculator-TOP
+
+The odin project final assignement.
