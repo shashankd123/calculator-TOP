@@ -22,6 +22,21 @@ keyConatiner.addEventListener("click", (e) => {
 	}
 });
 
+document.addEventListener("keydown" , (e) => {
+	let value = e.key;
+	console.log(value);
+
+	if(value == "Enter") value = "=";
+	if(value == "Backspace") value = "<";
+	
+
+	const whiteList = "0123456789./%x-+=<";
+
+	if(whiteList.includes(value)){
+		handleValue(value);
+	}
+})
+
 function handleValue(value) {
 	let numbers = "0123456789";
 	let symbols = "/%x-+";
@@ -36,7 +51,7 @@ function handleValue(value) {
 				val1 += value;
 			}
 		} else {
-			if (!(val2 == "" && value == "0")) {
+			if (!(val2 == "0" && value == "0")) {
 				val2 += value;
 			}
 		}
