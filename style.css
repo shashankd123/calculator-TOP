@@ -8,7 +8,7 @@ light = EAD8B1
 */
 
 *{
-    border: red solid 1px;
+    /* border: red solid 1px; */
     background: #EAD8B1;
 }
 
@@ -115,11 +115,11 @@ body{
     background: #6A9AB0;
     color: #001F3F;
     font-weight: bold;
-    font-size: x-large;
+    font-size: 20px;
     display: flex;
 }
 
-#pre-con{
+#secondary-display{
     background: #6A9AB0;
     margin-left: auto;
 }
@@ -134,7 +134,7 @@ body{
     display: flex;
 }
 
-#curr-con{
+#main-display{
     background: #6A9AB0;
     margin-left: auto;
 }
